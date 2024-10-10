@@ -4,6 +4,8 @@ Matakuliah tentang Internal Audit dan IT Audit Series, akan mempelajari tentang 
 
 # git scm
 Download git-scm dari https://git-scm.com/downloads
+Download VsCode
+Download Xampp
 
 ## Memasukan SSH Key
 Klik dulu profil github, Klik Setting, pilih SSH and GPG keys
