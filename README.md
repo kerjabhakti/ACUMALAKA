@@ -5,6 +5,9 @@ Matakuliah tentang Internal Audit dan IT Audit Series, akan mempelajari tentang 
 # git scm
 Download git-scm dari https://git-scm.com/downloads
 
+## Memasukan SSH Key
+Klik dulu profil github
+
 ## Get SSH Key 
 to get ssh key in your computer, and put in your github or gitlab ssh key setting.
 
