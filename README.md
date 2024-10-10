@@ -7,6 +7,8 @@ Download git-scm dari https://git-scm.com/downloads
 
 ## Memasukan SSH Key
 Klik dulu profil github, Klik Setting, pilih SSH and GPG keys
+![image](https://github.com/user-attachments/assets/52c63cba-3aa9-4d14-86fb-2ec20e8bfdbd)
+
 
 ## Get SSH Key 
 to get ssh key in your computer, and put in your github or gitlab ssh key setting.
