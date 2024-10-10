@@ -3,8 +3,8 @@ Matakuliah tentang Internal Audit dan IT Audit Series, akan mempelajari tentang 
 
 
 # git scm
-Download git-scm dari https://git-scm.com/downloads
-Download VsCode
+Download git-scm dari https://git-scm.com/downloads <br>
+Download VsCode <br>
 Download Xampp
 
 ## Memasukan SSH Key
