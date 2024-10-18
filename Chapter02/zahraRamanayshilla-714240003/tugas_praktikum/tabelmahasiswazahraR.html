@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      th,
+      tr,
+      td {
+         border: 1px solid black;
+      }
+   </style>
+   <script> 
+         function tam(){
+            var e = document.getElementById("tambah");
+            e.style.display = "none" === e.style.display ? "block" : "none";
+        }
+   </script>
+</head>
+
+<body>
+
+
+   <h1>TABLE MAHASISWA </h1>
+
+   <button><a href="#" onclick="tam()">Tambah data</a></button>
+   <form action="" id="tambah" style="display: none;">
+     
+         
+         <tr>
+            <td>NIM </td>
+            <td>:</td>
+            <td></td>
+            <td> <input type="text" name="nim"></td>
+         </tr>
+         <tr>
+            <td>Nama Lengkap</td>
+            <td>:</td>
+            <td></td>
+            <td> <input type="text" name="namalengkap"></td>
+         </tr>
+         <tr>
+            <td>Prodi</td>
+            <td>:</td>
+            <td></td>
+            <td> <input type="text" name="prodi"></td>
+         </tr>
+         <tr>
+            <td>No Telepon </td>
+            <td>:</td>
+            <td></td>
+            <td> <input type="text" name="notelepon"></td>
+         </tr>
+         <tr>
+            <td>Alamat </td>
+            <td>:</td>
+            <td></td>
+            <td> <textarea name="alamat" id=""></textarea></td>
+        </tr>
+      
+   
+   </form>
+
+   <br><br>
+   <form action="">
+      <table style="width: 60%;  text-align: center;">
+         <thead>
+            <tr>
+               <th>Nim</th>
+               <th>Nama </th>
+               <th>Prodi</th>
+               <th>No Telepon</th>
+               <th>Alamat</th>
+            </tr>
+         </thead>
+         <tbody>
+
+            <tr>
+               <td>714240001</td>
+               <td>Afifah Putri Deza</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>padang</td>
+            </tr>
+            <tr>
+               <td>714240002</td>
+               <td>Nadi Azzada Akbar</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Bandung</td>
+            </tr>
+            <tr>
+               <td>714240003</td>
+               <td>Zahra Ramanayshilla Sopian</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Bandung</td>
+            </tr>
+            <tr>
+               <td>714240004</td>
+               <td>Muhammad Faris Rodja</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Bandung</td>
+            </tr>
+            <tr>
+               <td>714240005</td>
+               <td>Alif Satria Raghib</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Bandung</td>
+            </tr>
+            <tr>
+               <td>714240006</td>
+               <td>Muhammad Rasyid Al Savero</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Tasik</td>
+            </tr>
+            <tr>
+               <td>714240007</td>
+               <td>Faidil Zahpar</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Bangka</td>
+            </tr>
+            <tr>
+               <td>714240008</td>
+               <td>Muhammad Arif Rivaldi</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>jakarta</td>
+            </tr>
+            <tr>
+               <td>714240009</td>
+               <td>Rahmat Pratama</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>NTT</td>
+            </tr>
+            <tr>
+               <td>714240010</td>
+               <td>Dzakwan Arya Jouza Rendyana</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Bekasi</td>
+            </tr>
+            <tr>
+               <td>714240011</td>
+               <td>Alifya Azzahra</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Cianjur</td>
+            </tr>
+            <tr>
+               <td>714240012</td>
+               <td>Samshi Yudha Pratama Nur Islam</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Bandung</td>
+            </tr>
+            <tr>
+               <td>714240013</td>
+               <td>Mohammad Isa Widianto</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Bandung</td>
+            </tr>
+            <tr>
+               <td>714240014</td>
+               <td>Alyasmin Assa'diyah</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Jawa timur</td>
+            </tr>
+            <tr>
+               <td>714240015</td>
+               <td>Aditya Firmansyah</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Bandung</td>
+            </tr>
+            <tr>
+               <td>714240041</td>
+               <td>Raditya Rizki Raharja</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Bandung</td>
+            </tr>
+            <tr>
+               <td>714240048</td>
+               <td>Keyla Sun</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Bandung</td>
+            </tr>
+            <tr>
+               <td>714240049</td>
+               <td>Muhammad Radhi Rabbani</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Bandung</td>
+            </tr>
+            <tr>
+               <td>714240050</td>
+               <td>Ridwan Hakim Ramadhan</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Bandung</td>
+            </tr>
+            <tr>
+               <td>714240051</td>
+               <td>Rafli Putra Pratama</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Bandung</td>
+            </tr>
+            <tr>
+               <td>714240051</td>
+               <td>Zahra Nur'azijah Lutfiani</td>
+               <td>Teknik Informatika</td>
+               <td>0895656463085</td>
+               <td>Bandung</td>
+            </tr>
+         </tbody>
+      </table>
+   </form>
+
+</body>
+
+</html>
