@@ -1,0 +1,28 @@
+body {
+    font: small-caps bold 16px/2 cursive;
+    background: wheat;
+    margin: 30px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+h1 {
+    color: rgb(58, 42, 12);
+    text-align: center;
+    margin: 20px;
+}
+h3 {
+    color: rgb(58, 42, 12);
+    text-align: center;
+    margin: 20px;
+}
+
+.article {
+    background: rgb(255, 243, 220);
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 60px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(128, 117, 97);
+}
