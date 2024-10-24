@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulir Pendaftaran Kampus</h1>
+    <form action="peserta.php" method="post">
+        <label for="name"><b>Nama Lengkap:</b> </label>
+        <input type="text" id="name" name="name" placeholder="masukkan nama anda" required>
+        <br>
+        <label for="lahir"><b>Tanggal Lahir:</b> </label>
+        <input type="date" name="lahir" id="lahir" required>
+        <br>
+        <label for="email"><b>Email:</b> </label>
+        <input type="email" id="email" name="email" placeholder="masukkan nama email" required>
+        <br>
+        <label for="Jurusan"><b>Pilih Jurusan:</b> </label>
+        <br>
+        <input type="radio" id="d4ti" name="Jurusan" value="d4ti">
+        <label for="d4ti">d4 Teknik informatika</label>
+        <br>
+        <input type="radio" id="s1bd" name="Jurusan" value="s1bd">
+        <label for="s1bd">S1 Bisnis Digital</label>
+        <br>
+        <input type="radio" id="s1manlog" name="Jurusan" value="s1manlog">
+        <label for="s1manlog">S1 Management Logistik</label>
+        <br>
+        <input type="radio" id="s1manrek" name="Jurusan" value="s1manrek">
+        <label for="s1manrek">S1 Management Rekayasa</label>
+        <br>
+        <br>
+        <label for="alasan"><b>Alasan memilih jurusan tersebut: </b></label>
+        <br>
+        <textarea name="alasan" id="alasan" rows="5" cols="55" placeholder="masukkan alasan anda"></textarea>
+        <hr>
+        <input type="submit" value="Daftar">
+
+
+
+
+
+    </form>
+    </div>
+</body>
+</html>
