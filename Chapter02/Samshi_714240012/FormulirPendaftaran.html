@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftran</title>
+    <style>
+        body {
+            font: Arial, sans-serif;
+            background: #022222d8;
+            margin: 0;
+            padding: 0;
+        }
+        .tengah  
+        {
+        color: hsl(0, 0%, 100%);
+        text-align: center;
+        margin:  0;
+        justify-content: center;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="tengah">
+        <h3>Tambah Data</h3>
+        <form action="" methode="POST">
+        <table>
+            <tr>
+                <td>NIM</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td><input type="Text"></td>
+            </tr>
+            <tr>
+                <td>Jurusan</td>
+                <td><input type="Text"></td>
+            </tr>
+            <tr>
+                <td>Domisili</td>
+                <td><input type="Text"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin </td>
+                <td>
+                    <input type="radio" name="jk">Laki-Laki
+                    <input type="radio" name="jk">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Tanggal</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Simpan">
+                    <input type="reset" value="Clear">
+                    <input type="button" value="Kembali">
+                </td>
+            </tr>
+
+        </table>
+        </form>
+    </div>
+
+</body>
+</html>
