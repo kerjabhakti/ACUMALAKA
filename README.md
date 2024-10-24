@@ -12,14 +12,6 @@ Klik dulu profil github, Klik Setting, pilih SSH and GPG keys
 ![image](https://github.com/user-attachments/assets/52c63cba-3aa9-4d14-86fb-2ec20e8bfdbd)
 
 
-## Get SSH Key 
-to get ssh key in your computer, and put in your github or gitlab ssh key setting.
-
-```sh
-cat ~/.ssh/id_rsa.pub
-```
-if there is no key appears, plese generate the key also set global config of git in next section and please add the public key to your github profile.
-
 ## Generate RSA Key
 Just One time for first instalation of git scm, 
 ```sh
@@ -33,3 +25,10 @@ Just One time for first instalation of git scm,
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
+## Get SSH Key 
+to get ssh key in your computer, and put in your github or gitlab ssh key setting.
+
+```sh
+cat ~/.ssh/id_rsa.pub
+```
+if there is no key appears, plese generate the key also set global config of git in next section and please add the public key to your github profile.
