@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            margin: 0 auto;
+            box-shadow: 0px 0px 10px 0px #ccc;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input[type=text], input[type=email], input[type=password] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Formulir Pendaftaran Asrama</h2>
+    <form action="/submit_form" method="post">
+        <label for="name">Nama Lengkap:</label>
+        <input type="text" id="name" name="name" placeholder="Nama lengkap Anda..." required>
+
+        <label for="Jurusan">Jurusan:</label>
+        <input type="email" id="jurusan" name="jurusan" placeholder="Jurusan Anda..." required>
+
+        <label for="Alamat">Alamat:</label>
+        <input type="text" id="alamat" name="alamat" placeholder="Alamat Anda..." required>
+
+        <label for="Jenis kelamin">Jenis kelamin:</label>
+        <input type="text" id="jenis kelamin" name="jenis kelamin" placeholder="Jenis kelamin Anda..." required>
+
+        <label for="telepon">Telepon:</label>
+        <input type="text" id="telepon" name="telepon" placeholder="Telepon Anda..." required>
+
+        <input type="submit" value="Daftar">
+    </form>
+</div>
+
+</body>
+</html>
