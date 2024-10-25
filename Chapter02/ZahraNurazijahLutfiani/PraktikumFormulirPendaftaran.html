@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <style>
+        body{
+            background: #eae9e9;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .daftar{
+            background: white;
+            padding: 5px;
+            margin: 25px
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+        input[type= 'number']{
+            width: 98%;
+        }
+        table{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="daftar">
+        <h1>Form Pendaftaran BEM KEMA ULBI</h1>
+        <table>
+            <tr>
+                <td><label for="nama">Nama Lengkap</label></td>
+                <td>:</td>
+                <td><input type="text" name="nama" id="nama" size="55" required></td>
+            </tr>
+            <tr>
+                <td><label for="telepon">No. Telepon</label></td>
+                <td>:</td>
+                <td><input type="number" name="telepon" required></td>
+            </tr>
+            <tr>
+                <td><label for="prodi">Email</label></td>
+                <td>:</td>
+                <td><input type="email" name="email" id="email" size="55"></td>
+            </tr>
+            <tr>
+                <td><label for="prodi">Prodi</label></td>
+                <td>:</td>
+                <td><input type="text" name="prodi" id="prodi" size="55"></td>
+            </tr>
+            <tr>
+                <td><label for="kelas">Kelas</label></td>
+                <td>:</td>
+                <td><input type="radio" name="a" id="a">A
+                    <input type="radio" name="b" id="b">B
+                    <input type="radio" name="c" id="c">C
+                    <input type="radio" name="d" id="d">D
+                </td>
+            </tr>
+            <tr>
+                <td><label for="nama">Alasan Masuk BEM KEMA ULBI</label></td>
+                <td>:</td>
+                <td><textarea name="comment" id="comment" rows="4" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit" values="submit" value="submit"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
