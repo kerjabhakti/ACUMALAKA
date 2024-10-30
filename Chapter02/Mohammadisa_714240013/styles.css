@@ -1,0 +1,14 @@
+body {
+    font: small-caps bold 16px/2 cursive;
+    margin: 20px;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
