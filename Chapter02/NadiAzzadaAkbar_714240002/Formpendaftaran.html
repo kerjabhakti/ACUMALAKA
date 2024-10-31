@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Pendaftaran</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+      }
+      h1 {
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        margin: 30px 30px;
+      }
+      .isian {
+        font-size: 15px;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 2px 5px rgb(81, 78, 78);
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><b>Formulir Pendaftaran</b></h1>
+    <div class="isian">
+      <form action="submit.php" method="post">
+        <label for="name">Nama Lengkap :</label>
+        <br />
+        <input type="text" id="name" name="name" required />
+        <br />
+        <label for="email">Alamat Email :</label>
+        <br />
+        <input type="text" id="email" name="email" required />
+        <br />
+        <label for="address">Alamat Lengkap :</label>
+        <br />
+        <input type="text" id="address" name="address" required />
+        <br />
+        <label for="birthday">Tanggal Lahir :</label>
+        <br />
+        <input type="date" id="birthday" name="birthday" required />
+        <br />
+        <label for="gender">Jenis Kelamin :</label>
+        <br />
+        <input type="radio" id="male" name="pria" value="male" />
+        <label for="male">pria</label>
+        <input type="radio" id="female" name="wanita" value="female" />
+        <label for="female">wanita</label>
+        <br />
+        <label for="comment">Ceritakan sedikit tentang dirimu :</label>
+        <br />
+        <textarea id="comment" name="comment" rows="5" cols="50"></textarea>
+        <br />
+        <input type="submit" value="Daftar" />
+      </form>
+    </div>
+  </body>
+</html>
