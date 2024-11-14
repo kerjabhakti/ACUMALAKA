@@ -123,3 +123,14 @@ npx tailwindcss init
 ![image](https://github.com/kerjabhakti/PWB231/assets/15622730/8fbc4901-b2e8-47df-932c-4145e0ff3634)
 ![image](https://github.com/kerjabhakti/PWA231/assets/15622730/d4e48e7e-6ee0-4eb0-ba14-6405d5a187fa)
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membuat Website dengan Tailwind</title>
+    <!-- Jangan lupa tambahkan koneksi HTML ke CSS/Tailwind  -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
