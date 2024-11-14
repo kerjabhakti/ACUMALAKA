@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Girld dan selector</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      .iten {
+        background-color: #3498db;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+      }
+
+      /* selector untuk elemen dangan class "special" */
+      .special {
+        background-color: #e74c3c;
+      }
+
+      /* selector untuk elemen dengan id "unique" */
+      #unique {
+        background-color: #27ac68;
+      }
+
+      /*selector untuk elemen <p> yang ada dalam class "container" */
+      .container p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Grid dan selector</h1>
+    <div class="container">
+      <div class="iten">iten 1</div>
+      <div class="iten">iten 2</div>
+      <div class="iten spesial">iten 3 (spesial)</div>
+      <div class="iten">iten 4</div>
+      <div class="iten">iten 5</div>
+      <div class="iten" id="unique">iten 6 (unique)</div>
+    </div>
+    <p>ini adalah contoh teks dalam class "container".</p>
+    <p>ini adalah contoh teks di luar class "container".</p>
+  </body>
+</html>
