@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <!-- menghubungkan file CSS esternal -->
+    <title>website responsif</title>
+  </head>
+  <body>
+    <header>
+      <h1>selamat datang di website kami</h1>
+      <nav>
+        <a href="#">Beranda</a>
+        <a href="#">Tentang kami</a>
+        <a href="#">Layanan</a>
+        <a href="#">Kontak</a>
+      </nav>
+    </header>
+    <main>
+      <section class="content">
+        <h2>tentang kami</h2>
+        <p>kami adalah perusahaan yang berfokus pada pengembangan web dan teknologi.</p>
+      </section>
+      <section class="content">
+        <h2>layanan kami</h2>
+        <ul>
+          <li>desain web</li>
+          <li>pengembangan aplikasi</li>
+          <li>optiminasi SEO</li>
+        </ul>
+      </section>
+    </main>
+    <footer>&copy; 2023 website responsif. Hak cipta dilindungi.</footer>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #27ae60;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: azure;
+            padding: 10px 20px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .content {
+            width: 45%;
+            background-color: aliceblue;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: azure;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+  </body>
+</html>
