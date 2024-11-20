@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Website dengan Tailwind</title>
+
+    <!-- Jangan lupa tambahkan koneksi HTML ke CSS/Tailwind  -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Membuat class container dan ukuran disi-->
+    <!-- menanbahkan background Images  -->
+    <!-- menambahkan posisi gambar agar ketengan -->
+    <!-- mengatur posisi ukurannya -->
+    <div class="container min-h-screen bg-[url('images/image.png')] bg-center bg-cover px-28 py-5 relative">
+
+        <nav class="flex items-center">
+            <img src="images/logo.png" alt="logonyaini" class="w-40 cursor-pointer" />
+            <!-- atur posisi logo kiri,
+                 mengtur tengah dan ,
+                 card ico di sebelah kanan -->
+            <ul class="flex-1 text-center">
+                <!--Atur pusisi menjadi sejajar  -->
+                <!-- Atur margin setelah inline-blok dan padding setelah text white -->
+                <li class="list-none inline-block px5">
+                    <a href="#" class="no-underline text-white px-2">Home</a>
+                </li>
+                <li class="list-none inline-block">
+                    <a href="#" class="no-underline text-white px-2">About</a>
+                </li>
+                <li class="list-none inline-block">
+                    <a href="#" class="no-underline text-white px-2">Features</a>
+                </li>
+                <li class="list-none inline-block">
+                    <a href="#" class="no-underline text-white px-2">Contact</a>
+                </li>
+            </ul>
+            <img src="images/cart.png" alt="keranjang" class="w-8 cursor-pointer" />
+        </nav>
+        <!-- Rubah text menjadi putih -->
+        <!-- atur jarak text atas bawah dan ukuran text judul h1 -->
+        <div class="text-white mt-48">
+            <h1 class="text-6xl font-semibold leading-normal">
+                Belajar Cepat <br />
+                Pemrograman <br /> Website Tailwind <br>
+                <span class="font-light">15 Menit Saja</span>
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, adipisci!
+            </p>
+            <div class="mt-10">
+                <a href="#"
+                    class="bg-yellow-300 rounded-3xl py-3 px-8 font-medium inline-block mr-4
+            hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 hover:border border border-transparent">Mari
+                    Belajar</a>
+                <a href="#">Download Modulnya</a>
+            </div>
+        </div>
+        <img src="images/programmer.png" class=" x1:w-1/2 absolute bottom-0 right-0 " alt="">
+    </div>
+
+    <!-- Tugas Praktikum -->
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="bg-white p-8 rounded-lg shadow-md w-96">
+            <h1 class="bg-slate-300">Image</h1>
+            <img id="myImage" src="Ciluk.jpg" style="width: 200px" />
+            <button class="bg-gray-400 rounded-3xl py-3 px-8 font-medium inline-block mr-4
+    hover:bg-transparent hover:border-black hover:text-black duration-300 hover:border border border-transparent"
+                onclick="document.getElementById('myImage').src='Ciluk.jpg'">Cilukkk
+            </button>
+
+            <button class="bg-gray-400 rounded-3xl py-3 px-8 font-medium inline-block mr-4
+    hover:bg-transparent hover:border-black hover:text-black duration-300 hover:border border border-transparent"
+                onclick="document.getElementById('myImage').src='Baaa.jpg'">
+                BAAAAA
+            </button>
+        </div>
+
+        <!-- Aritmatika -->
+
+        <div class="bg-white p-8 rounded-lg shadow-md w-96">
+            <h2>kalkulator</h2>
+            <div class="w-90 p-10 bg-white rounded-lg shadow-lg text-center">
+                <div id="display"
+                    class="mb-4 h-12 text-right text-2xl font-semibold text-gray-700 border-b-2 border-gray-200">
+                    0
+                </div>
+                <div class="grid grid-cols-4 gap-x-2">
+                    <!-- Angka -->
+                    <button onclick="appendNumber('7')" class="btn">7</button>
+                    <button onclick="appendNumber('8')" class="btn">8</button>
+                    <button onclick="appendNumber('9')" class="btn">9</button>
+                    <button onclick="setOperation('/')" class="btn text-orange-500">÷</button>
+
+                    <button onclick="appendNumber('4')" class="btn">4</button>
+                    <button onclick="appendNumber('5')" class="btn">5</button>
+                    <button onclick="appendNumber('6')" class="btn">6</button>
+                    <button onclick="setOperation('*')" class="btn text-orange-500">×</button>
+
+                    <button onclick="appendNumber('1')" class="btn">1</button>
+                    <button onclick="appendNumber('2')" class="btn">2</button>
+                    <button onclick="appendNumber('3')" class="btn">3</button>
+                    <button onclick="setOperation('-')" class="btn text-orange-500">−</button>
+
+                    <button onclick="clearDisplay()" class="btn bg-gray-200">C</button>
+                    <button onclick="appendNumber('0')" class="btn">0</button>
+                    <button onclick="calculate()" class="btn bg-green-500 text-white">=</button>
+                    <button onclick="setOperation('+')" class="btn text-orange-500">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- botton -->
+        <div class="bg-white p-8 rounded-lg shadow-md w-96">
+            <h2>Botton</h2>
+
+            <p id="demo">Text ini akan berupah jika di klik ayo cepat</p>
+
+            <button class="bg-gray-600 rounded-3xl py-3 px-8 font-medium inline-block mr-4
+    hover:bg-transparent hover:border-yellow-300 hover:text-black duration-300 hover:border border border-transparent"
+                type="button" onclick='document.getElementById("demo").innerHTML =  "Samshi Ganteng "'>
+                Ayo Tekan
+            </button>
+        </div>
+
+
+        <!-- Pergantian Paragraf -->
+        <div class="bg-white p-8 rounded-lg shadow-md w-96">
+            <h2>Pergantian Paragraf</h2>
+            <div class="text-center p-6 bg-white rounded-lg  w-80">
+                <!-- Paragraf -->
+                <p id="paragraph" class="text-gray-700 text-lg mb-4">
+                    apa itu tailwind
+                </p>
+            </div>
+
+            <!-- Tombol -->
+            <button
+                onclick="changeParagraph('Tailwind CSS adalah framework CSS yang memungkinkan pengembang untuk membangun desain website dengan cepat dan mudah')"
+                class="btn bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+                Tailwind
+            </button>
+            <button
+                onclick="changeParagraph('Mengurangi penulisan CSS khusus ,Bisa menjaga ukuran file CSS tetap kecil ,Tidak perlu menciptakan nama kelas sendiri ,Bisa melakukan perubahan dengan lebih aman')"
+                class="btn bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 mt-2">
+                Fungsi
+            </button>
+        </div>
+
+        <!-- Statetment -->
+        <div class="bg-white p-8 rounded-lg shadow-md w-96">
+            <h2>Statement</h2>
+            <div class="w-90 p-6 bg-white rounded-lg shadow-lg text-center">
+                <h1 class="text-2xl font-bold text-gray-800 mb-4">Statement Generator</h1>
+                <input type="text" id="nameInput"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Masukkan nama Anda" />
+                <button onclick="generateStatement()"
+                    class="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">
+                    Tampilkan Pesan
+                </button>
+                <p id="statementOutput" class="mt-4 text-lg text-gray-700 font-semibold"></p>
+            </div>
+        </div>
+
+        <!-- Syntax -->
+        <div class="bg-white p-8 rounded-lg shadow-md w-96">
+            <h2>Syntax</h2>
+            <div class="w-90 p-6 bg-white rounded-lg shadow-lg">
+                <h1 class="text-2xl font-bold text-gray-800 mb-4 text-center">Alert Box</h1>
+                <p class="text-gray-600 text-center mb-6">
+                    Klik tombol di bawah ini untuk memunculkan pesan alert.
+                </p>
+                <div class="text-center">
+                    <button onclick="showAlert()"
+                        class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg">
+                        Tampilkan Alert
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
