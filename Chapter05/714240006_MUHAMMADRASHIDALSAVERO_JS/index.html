@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Website dengan Tailwind</title>
+    <!-- Jangan lupa tambahkan koneksi HTML ke CSS/Tailwind -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Membuat class containernya disini -->
+    <!-- Menambahkan background images -->
+    <!-- Menambah posisi gambar agar ketengah -->
+    <!-- Mengatur posisi ukurannya -->
+    <div class="sticky top-0 container max-w-screen-xl  bg-[url('img/beluu.jpg')] bg-center bg-auto px-5 py-2">
+        <nav class="flex items-center">
+            <img src="img/Manshines-removebg-preview.png" alt="inilogo" class="w-20 cursor-pointer" />
+            <ul class="flex-1 text-center">
+                <li class="list-none inline-block px-5 font-semibold"><a href="#">Home</a></li>
+                <li class="list-none inline-block px-5 font-semibold"><a href="#">Image Change</a></li>
+                <li class="list-none inline-block px-5 font-semibold"><a href="#">Statement</a></li>
+                <li class="list-none inline-block px-5 font-semibold"><a href="#">Syntax</a></li>
+                <li class="list-none inline-block px-5 font-semibold"><a href="#">Paragraph</a></li>
+                <li class="list-none inline-block px-5 font-semibold"><a href="#">Aritmatik</a></li>
+            </ul>
+            <img src="img/keranjnag-removebg-preview.png" alt="keranjang" class="w-20 cursor-pointer">
+        </nav>
+    </div>
+
+    <div class="mt-48 text-center">
+        <h1 class="text-5xl font-semibold leading-normal">MUHAMMAD RASHID AL SAVERO
+            </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quidem consectetur laboriosam eaque odit, repudiandae eligendi quod! Voluptas, culpa, a exercitationem amet fuga nesciunt soluta, explicabo nobis veritatis eum quidem?
+        </p>
+    </div>
+
+    <!-- Image Change -->
+    <div class= "mt-48 flex flex-col items-center justify-center mx-auto bg-[url('img/beluu.jpg')]">
+        <h1 class="text-5xl font-semibold leading-normal text-center p-4">Image Change</h1>
+        <img src="img/cat.jpg" class="h-96 py-2" id="foto">
+        <button onclick="image()" class="bg-white rounded-lg px-3 py-2 mb-2">Before</button>
+        <button onclick="image2()" class="bg-white rounded-lg px-3 py-2 mb-2">After</button>
+    </div>
+
+    <!-- Statement -->
+    <div id="statement" class="text-center">
+        <h1 class="text-center text-5xl font-semibold p-7 mt-7">Statement</h1>
+        <p class="mb-2">Berapakah hasil dari 2 + 5 ??</p>
+        <input type="text" name="angka" id="angka" class="text-white bg-slate-600 rounded-lg px-2 py-1" />
+        <button onclick="jika()" class="rounded-lg bg-cyan-200 px-2 py-5 mb-24">Answer</button>
+    </div>
+
+    <!-- Syntax -->
+    <div id="syntax" class="text-center bg-[url('img/beluu.jpg')] mx-auto">
+        <h1 class="text-5xl font-semibold p-7">Syntax</h1>
+        <p class="mb-7">Coba ketikan sesuatu deh...</p>
+        <textarea name="tulisan" id="tulisan" cols="40" rows="3" class="text-black rounded-lg px-2 py-1"></textarea><br/>
+        <button onclick="tulisan()" class="rounded-lg px-2 py-1 bg-cyan-200 mb-12">Answer</button>
+    </div>
+
+    <!-- Paragraph -->
+     <div id="paragraph" class="text-center">
+        <h1 class="text-5xl font-semibold py-14">Paragraph</h1>
+        <p class="mb-7 bg-gray-100 px-28" id="hasil"></p>
+        <button onclick="paragraph()" class="rounded-lg bg-cyan-200 mt-1 mb-11 px-2">Click This</button>
+     </div>
+
+     <!-- Aritmatik -->
+     <div class="bg-[url('img/beluu.jpg')] mx-auto text-center" id="aritmatik">
+        <h1 class="text-5xl font-semibold py-11">Aritmatik</h1>
+        <div class="calculator bg-slate-400 shadow-lg rounded-lg p-6 mt-20 mb-20">
+            <input type="text" id="display" class="mt-16 w-full p-2 border border-gray-300 rounded mb-4 text-right" disabled>
+            <div class="grid grid-cols-4 gap-4">
+                <button class="bg-cyan-400 text-white p-5 rounded text-xl font-semibold" onclick="appendToDisplay('9')">9</button>
+                <button class="bg-cyan-400 text-white p-5 rounded text-xl font-semibold" onclick="appendToDisplay('8')">8</button>
+                <button class="bg-cyan-400 text-white p-5 rounded text-xl font-semibold" onclick="appendToDisplay('7')">7</button>
+                <button class="bg-orange-400 text-white p-5 rounded text-xl font-semibold" onclick="clearDisplay()">C</button>
+                <button class="bg-cyan-400 text-white p-5 rounded text-xl font-semibold" onclick="appendToDisplay('4')">4</button>
+                <button class="bg-cyan-400 text-white p-5 rounded text-xl font-semibold" onclick="appendToDisplay('5')">5</button>
+                <button class="bg-cyan-400 text-white p-5 rounded text-xl font-semibold" onclick="appendToDisplay('6')">6</button>
+                <button class="bg-cyan-400 text-white p-5 rounded text-xl font-semibold" onclick="appendToDisplay('+')">+</button>
+                <button class="bg-cyan-400 text-white p-5 rounded text-xl font-semibold" onclick="appendToDisplay('3')">3</button>
+                <button class="bg-cyan-400 text-white p-5 rounded text-xl font-semibold" onclick="appendToDisplay('2')">2</button>
+                <button class="bg-cyan-400 text-white p-5 rounded text-xl font-semibold" onclick="appendToDisplay('1')">1</button>
+                <button class="bg-cyan-400 text-white p-5 rounded text-xl font-semibold" onclick="appendToDisplay('*')">*</button>
+                <button class="bg-cyan-400 text-white p-5 rounded text-xl font-semibold col-span-2" onclick="appendToDisplay('0')">0</button>
+                <button class="bg-cyan-400 text-white p-5 rounded text-xl font-semibold" onclick="calculateResult()">=</button>
+                <button class="bg-cyan-400 text-white p-5 rounded text-xl font-semibold" onclick="appendToDisplay('-')">-</button>
+            </div>
+        </div>
+     </div>
+
+    <script src="allscript.js"></script>
+</body>
+</html>

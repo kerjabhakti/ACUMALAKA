@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Saya</title>
+    <!-- CDN TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: century gothic;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="flex items-center bg-gray-800 fixed top-0 left-0 right-0 shadow shadow-red-700">
+      <img src="img/logo.png" alt="inilogo" class="w-32 cursor-pointer ms-10" />
+      <ul class="flex-1 text-right">
+        <li class="list-none inline-block px-5"><a href="#home" class="text-white hover:bg-slate-600 rounded-xl py-1 px-3">Home</a></li>
+        <li class="list-none inline-block px-5"><a href="#aritmatika" class="text-white hover:bg-slate-600 rounded-xl py-1 px-3">Aritmatika</a></li>
+        <li class="list-none inline-block px-5"><a href="#syntax" class="text-white hover:bg-slate-600 rounded-xl py-1 px-3">Syntax</a></li>
+        <li class="list-none inline-block px-5"><a href="#statement" class="text-white hover:bg-slate-600 rounded-xl py-1 px-3">Statement</a></li>
+        <li class="list-none inline-block px-5"><a href="#image" class="text-white hover:bg-slate-600 rounded-xl py-1 px-3">Image</a></li>
+        <li class="list-none inline-block px-5"><a href="#paragraph" class="text-white hover:bg-slate-600 rounded-xl py-1 px-3">Paragraph</a></li>
+      </ul>
+    </nav>
+    <!-- container-->
+
+    <div class="container mb-10 text-center bg-slate-500 py-72" id="home">
+      <h1 class="text-7xl font-semibold text-white leading-normal">RIDWAN HAKIM RAMADHAN</h1>
+      <h3 class="text-4xl text-red-700">D4 TEKNIK INFORMATIKA</h3>
+    </div>
+
+    <!-- ARITMATIKA -->
+    <div class="container" id="aritmatika">
+      <div class="bg-gray-800 mx-96 mb-6 p-32 text-center text-white rounded-lg">
+        <h1 class="text-7xl font-semibold mb-5">Aritmatika</h1>
+        <p class="mb-2">Kalkulator Sederhana</p>
+        <input type="number" name="x" id="x" class="text-black rounded-lg px-2 py-1" />
+        <select name="operator" id="operator" class="text-black rounded-lg px-2 py-1">
+          <option value="tambah">+</option>
+          <option value="kurang">-</option>
+          <option value="kali">*</option>
+          <option value="bagi">/</option>
+        </select>
+        <input type="number" name="y" id="y" class="text-black rounded-lg px-2 py-1" />
+        <button onclick="hitung()" class="rounded-lg px-2 py-1 bg-red-700 mt-2">SUBMIT</button>
+        <p id="hasil" class="bg-white text-black mx-48 mt-2 rounded-lg"></p>
+      </div>
+    </div>
+
+    <!-- SYNTAX -->
+    <div class="container py-5" id="syntax">
+      <div class="mx-96 p-32 flex-col bg-gray-800 text-white text-center rounded-lg">
+        <h1 class="text-7xl font-semibold mb-5">Syntax</h1>
+        <p class="mb-2">Coba Tuliskan Sesuatu untuk membuatkan alert</p>
+        <textarea name="tulisan" id="tulisan" cols="40" rows="3" class="text-black rounded-lg px-2 py-1"></textarea><br />
+        <button onclick="tulisan()" class="rounded-lg px-2 py-1 bg-red-700">SUBMIT</button>
+      </div>
+    </div>
+
+    <!-- STATEMENT -->
+    <div class="container py-5">
+      <div class="mx-96 p-32 flex-col bg-gray-800 text-white text-center rounded-lg" id="statement">
+        <h1 class="text-7xl font-semibold mb-5">Statement</h1>
+        <p class="mb-2">huruf ke 4 dari abjad adalah</p>
+        <input type="text" name="huruf" id="huruf" class="text-black rounded-lg px-2 py-1" />
+        <button onclick="jika()" class="rounded-lg px-2 py-1 bg-red-700">SUBMIT</button>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="container py-5">
+      <div class="mx-96 p-32 flex-col bg-gray-800 text-white text-center rounded-lg" id="image">
+        <h1 class="text-7xl font-semibold mb-5" id="image">IMAGE</h1>
+        <button onclick="foto1()" class="rounded-lg px-2 py-1 bg-red-700 mr-5 mb-5">spiderman satu</button>
+        <button onclick="foto2()" class="rounded-lg px-2 py-1 bg-red-700">spiderman dua</button>
+        <img src="img/spider.jpg" alt="" class="m-auto w-56" id="spiderman" />
+      </div>
+    </div>
+
+    <!-- PARAGRAPH -->
+    <div class="container py-5">
+      <div class="mx-96 p-32 flex-col bg-gray-800 text-white text-center rounded-lg" id="paragraph">
+        <h1 class="text-7xl font-semibold mb-5">Paragraph</h1>
+        <button onclick="paragraph()" class="rounded-lg px-2 py-1 bg-red-700 mb-5">KLIK</button>
+        <p id="hasilpg"></p>
+      </div>
+    </div>
+
+    <!-- script js -->
+    <script src="script.js"></script>
+  </body>
+</html>
