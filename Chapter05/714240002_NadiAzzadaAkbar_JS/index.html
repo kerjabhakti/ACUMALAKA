@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website - Tailwind</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <nav class="bg-gray-800 p-4 fixed w-full top-0 left-0 shadow">
+      <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+          <div class="text-white text-lg font-bold">VENA</div>
+          <button
+            class="block text-gray-300 hover:text-white focus:outline-none"
+            onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div id="mobile-menu" class="hidden mt-4 space-y-2">
+          <a
+            href="#home"
+            class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+            >Home</a
+          >
+          <a
+            href="#arithmetic"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Arithmetic</a
+          >
+          <a
+            href="#syntax"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Syntax</a
+          >
+          <a
+            href="#statement"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Statement</a
+          >
+          <a
+            href="#image"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Image</a
+          >
+          <a
+            href="#paragraph"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Paragraph</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!--HOME-->
+    <header id="home" class="home">
+      <div
+        class="container mx-auto bg-white flex items-center justify-center p-72"
+      >
+        <div class="text-center">
+          <h1
+            class="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl"
+          >
+            <b>NADI AZZADA AKBAR</b>
+          </h1>
+          <p class="mt-4 text-lg font-medium text-gray-700 sm:text-xl">
+            714240002
+          </p>
+          <p class="mt-2 text-lg font-medium text-gray-500 sm:text-xl">
+            MATERI JAVASCRIPT PEMROGRAMAN 1A D4 - TEKNIK INFORMATIKA
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!--ARITMATIKA-->
+    <section id="arithmetic" class="arithmetic">
+      <div
+        class="container mx-auto bg-gray-800 flex flex-col items-center justify-center p-8 sm:p-16 lg:p-28"
+      >
+        <div class="text-center">
+          <h3
+            class="text-3xl font-semibold tracking-tight text-gray-300 sm:text-5xl lg:text-7xl mb-8"
+          >
+            <b>ARITMATIKA</b>
+          </h3>
+          <div class="w-full max-w-md bg-white shadow-lg py-8 px-6 rounded-md">
+            <input
+              type="text"
+              id="result"
+              class="w-full bg-gray-200 text-right p-4 mb-4 border border-gray-300 rounded-md focus:outline-none"
+              placeholder="0"
+              readonly
+            />
+            <div class="grid grid-cols-4 gap-3">
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="clearResult()"
+              >
+                C
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter('(')"
+              >
+                (
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter(')')"
+              >
+                )
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter('/')"
+              >
+                &divide;
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter('7')"
+              >
+                7
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter('8')"
+              >
+                8
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter('9')"
+              >
+                9
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter('*')"
+              >
+                &times;
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter('4')"
+              >
+                4
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter('5')"
+              >
+                5
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter('6')"
+              >
+                6
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter('-')"
+              >
+                -
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter('1')"
+              >
+                1
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter('2')"
+              >
+                2
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter('3')"
+              >
+                3
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter('+')"
+              >
+                +
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter('0')"
+              >
+                0
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter('.')"
+              >
+                .
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="calculateResult()"
+              >
+                =
+              </button>
+              <button
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 rounded"
+                onclick="appendCharacter('%')"
+              >
+                %
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SYNTAX-->
+    <section id="syntax" class="syntax">
+      <div
+        class="container mx-auto bg-white flex flex-col items-center justify-center p-8 sm:p-16 lg:p-28"
+      >
+        <div class="text-center">
+          <h3
+            class="text-4xl font-semibold tracking-tight text-gray-500 sm:text-6xl lg:text-7xl mb-8"
+          >
+            <b>SYNTAX</b>
+          </h3>
+          <p class="my-2 text-lg font-medium text-gray-700 sm:text-xl">
+            Coba ketik apapun yang kalian mau!
+            <br />
+            Website pun akan membuatkan alertnya
+          </p>
+          <div class="w-full max-w-lg py-8 px-6 items-center justify-center">
+            <input
+              type="text"
+              id="input"
+              class="w-full bg-gray-200 text-center p-4 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+              placeholder="Ketik Sesuatu"
+            />
+            <button
+              class="rounded-full bg-blue-400 hover:bg-blue-500 text-white font-bold mt-8 py-3 px-6 transition duration-300 ease-in-out"
+              onclick="showAlert()"
+            >
+              CLICK!
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--STATEMENT-->
+    <section id="statement" class="statement">
+      <div
+        class="container mx-auto bg-gray-800 flex flex-col items-center justify-center p-8 sm:p-16 lg:p-28"
+      >
+        <div class="text-center">
+          <h3
+            class="text-3xl font-semibold tracking-tight text-gray-300 sm:text-5xl lg:text-7xl mb-8"
+          >
+            <b>STATEMENT</b>
+          </h3>
+          <p class="my-2 text-lg font-medium text-gray-400 sm:text-xl">
+            Coba tebak nomor random dari 1 sampai 10!
+            <br />
+            Anda hanya memiliki 5 kali kesempatan
+          </p>
+          <div class="w-full max-w-lg py-8 px-6 items-center justify-center">
+            <input
+              type="text"
+              id="inputGuess"
+              class="w-full bg-gray-200 text-center p-4 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+              placeholder="Tebak nomornya..."
+            />
+            <button
+              id="inputGuessBtn"
+              class="rounded-full bg-blue-400 hover:bg-blue-500 text-white font-bold mt-8 py-3 px-6 transition duration-300 ease-in-out"
+              onclick="userGuess()"
+            >
+              CLICK!
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--IMAGE-->
+    <section id="image" class="image">
+      <div
+        class="container mx-auto bg-white flex flex-col items-center justify-center p-8 sm:p-16 lg:p-28"
+      >
+        <div class="text-center">
+          <h3
+            class="text-3xl font-semibold tracking-tight text-gray-800 sm:text-5xl lg:text-7xl mb-8"
+          >
+            <b>IMAGE</b>
+          </h3>
+          <img
+            src="image/nahi'dwin.jpg"
+            id="displayImage"
+            class="rounded-2xl shadow-md m-8"
+          />
+          <button
+            id="ekspektasi"
+            class="rounded-full bg-blue-400 hover:bg-blue-500 text-white font-bold m-8 py-3 px-6 transition duration-300 ease-in-out"
+          >
+            EXPECTATION
+          </button>
+          <button
+            id="realita"
+            class="rounded-full bg-blue-400 hover:bg-blue-500 text-white font-bold m-8 py-3 px-6 transition duration-300 ease-in-out"
+          >
+            REALITY
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--PARAGRAF-->
+    <section id="paragraph" class="paragraph">
+      <div
+        class="container mx-auto bg-gray-800 flex flex-col items-center justify-center p-8 sm:p-16 lg:p-28"
+      >
+        <div class="text-center">
+          <h3
+            class="text-3xl font-semibold tracking-tight text-gray-300 sm:text-5xl lg:text-7xl mb-8"
+          >
+            <b>PARAGRAPH</b>
+          </h3>
+          <p
+            id="profile"
+            class="text-justify my-2 text-lg font-medium text-gray-400 sm:text-xl"
+          >
+            Click to know me better!
+          </p>
+          <button
+            class="rounded-full bg-blue-400 hover:bg-blue-500 text-white font-bold mt-8 py-3 px-6 transition duration-300 ease-in-out"
+            onclick="showProfile()"
+          >
+            CLICK!
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
