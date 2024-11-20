@@ -21,3 +21,5 @@ Kali ini saya tidak menuliskan di javascript namun di HTML saja, saya menambahka
 ketika di klik akan berubah, saya menambahkan gambar di folder img untuk penampungan dan di HTML saya menyisipkan gambar yang akan berubah ketika
 di klik button sesuai buttonnya
 8. Untuk Javascript saya simpan diluar file HTML dan aya kasih link di HTMl untuk menghubungkan
+
+Sekian Terimakasih,
