@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Tailwind</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container min-h-screen bg-[url('https://github.com/UpgradeIn/webgrocify/blob/main/images/Image.png?raw=true')] bg-center bg-cover px-28 py-5 relative">
+      <nav class="flex items-center">
+        <img src="https://github.com/UpgradeIn/webgrocify/blob/main/images/logo.png?raw=true" alt="logonyaini" class="w-40 cursor-pointer" />
+        <ul class="flex-1 text-center">
+          <li class="list-none inline-block px-5">
+            <a href="#" class="no-underline text-white px-2">Home</a>
+          </li>
+          <li class="list-none inline-block px-5">
+            <a href="#" class="no-underline text-white px-2">About</a>
+          </li>
+          <li class="list-none inline-block px-5">
+            <a href="#" class="no-underline text-white px-2">Features</a>
+          </li>
+          <li class="list-none inline-block px-5">
+            <a href="#" class="no-underline text-white px-2">Contact</a>
+          </li>
+        </ul>
+        <img src="https://github.com/UpgradeIn/webgrocify/blob/main/images/cart.png?raw=true" alt="keranjang" class="w-8 cursor-pointer" />
+      </nav>
+      <div class="text-white mt-48">
+        <h1 class="text-6xl font-semibold leading-normal">
+          Belajar Ngoding Cepat<br />
+          <span class="font-light">Tailwindcss 20 Menit</span>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam recusandae <br>deleniti, necessitatibus quisquam accusantium voluptas maxime, incidunt <br>voluptatibus architecto excepturi placeat numquam. Consequuntur sed assu<br>menda eum. Culpa, esse minima, eum dicta ea non officia dignissimos neque
+         </p>
+      </div>
+      <div class="mt-10">
+        <a
+          href="#"
+          class="bg-yellow-300 rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 hover:border border border-transparent"
+          >Mari Belajar</a
+        >
+        <a href="#" class="text-white">Download Modulnya <span class="text-lg inline-block rotate-90">&#10148</span></a>
+      </div>
+      </div>
+      <img src="https://github.com/UpgradeIn/webgrocify/blob/main/images/programmer.png?raw=true" class="w-full xl:w-2/5 xl:absolute bottom-0 right-20" alt="">
+    </div>
+    <div>
+      <div class="bg-yellow-300">
+        <!-- Aritmatika -->
+        <section class="aritmatika ml-8">
+          <input class="text-black mt-8" type="number" id="num1" placeholder="0" required />
+          <br />
+          <input class="text-black mt-4" type="number" id="num2" placeholder="0" required /><br />
+          <div class="button mt-4">
+            <button type="button" onclick="calculate('+')" class="border border-black font-bold py-1 px-2 bg-white">+</button>
+            <button type="button" onclick="calculate('-')" class="border border-black font-bold py-1 px-2 bg-white">-</button>
+            <button type="button" onclick="calculate('*')" class="border border-black font-bold py-1 px-2 bg-white">x</button>
+            <button type="button" onclick="calculate('/')" class="border border-black font-bold py-1 px-2 bg-white">:</button>
+            <div class="result" id="result"></div>
+          </div>
+        </section>
+        <!-- Syntax -->
+        <section class="syntax mt-8 ml-8">
+          <button class="border border-black p-1 rounded bg-white" onclick="showAlert()">Klik Saya</button>
+        </section>
+        <!-- Statement -->
+        <section class="statement mt-8 ml-8">
+          <h1>Manusia bukan?</h1>
+          <button class="border border-black p-1 rounded bg-white" onclick="checkAnswer('Iya')">Iya</button>
+          <button class="border border-black p-1 rounded bg-white" onclick="checkAnswer('Bukan')">Bukan</button>
+        </section>
+        <!-- Image Change -->
+        <section class="image mt-8 ml-8">
+          <button class="border border-black p-1 rounded bg-white" onclick="document.getElementById('gambar').src='https://upload.wikimedia.org/wikipedia/id/thumb/7/7a/Manchester_United_FC_crest.svg/330px-Manchester_United_FC_crest.svg.png'">
+            Klub terbaik
+          </button>
+          <button class="border border-black p-1 rounded bg-white" onclick="document.getElementById('gambar').src='https://upload.wikimedia.org/wikipedia/id/thumb/0/0c/Liverpool_FC.svg/278px-Liverpool_FC.svg.png'">Klub sampah</button>
+          <img id="gambar" src="https://upload.wikimedia.org/wikipedia/id/thumb/7/7a/Manchester_United_FC_crest.svg/330px-Manchester_United_FC_crest.svg.png" alt="" />
+        </section>
+        <!-- Paragraf -->
+        <section class="paragraf mt-8 ml-8">
+          <p id="demo">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad mollitia aliquid cupiditate quam maiores doloremque velit ex corrupti fuga iure quos omnis aperiam voluptatum provident eius, reiciendis a impedit? Voluptatum. Lorem, ipsum dolor sit
+            amet consectetur adipisicing elit. Expedita, perferendis? Nulla pariatur porro praesentium nostrum hic? Impedit voluptate, repellendus magnam asperiores non ipsa odio nisi ratione vel culpa fuga explicabo.
+          </p>
+          <button class="border border-black p-1 rounded bg-white" type="button" onclick="myFunction()">Berubah nih</button>
+        </section>
+      </div>
+  </div>
+
+   <script src="script.js"></script>
+  </body>
+</html>
