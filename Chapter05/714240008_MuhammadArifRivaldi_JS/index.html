@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Tugas Cuy</title>
+</head>
+
+<body class="bg-white-800">
+    <!-- Navbar -->
+    <nav class="sticky top-0 bg-gray-900 shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="image/CuyLogo.webp" alt="Logo" class="h-20 w-20 mr-2 rounded-full">
+                <span class="text-xl font-semibold text-white">Tugas Cuy</span>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-gray-300 hover:text-white">Home</a>
+                <a href="#aritmatic" class="text-gray-300 hover:text-white">Aritmatic</a>
+                <a href="#syntax" class="text-gray-300 hover:text-white">Syntax</a>
+                <a href="#statement" class="text-gray-300 hover:text-white">Statement</a>
+                <a href="#imagechange" class="text-gray-300 hover:text-white">Image Change</a>
+                <a href="#paragraph" class="text-gray-300 hover:text-white">Paragraph</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-button" class="text-gray-300 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="menu" class="hidden md:hidden">
+            <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700">Home</a>
+            <a href="#aritmatic" class="block px-4 py-2 text-gray-300 hover:bg-gray-700">Aritmatik</a>
+            <a href="#syntax" class="block px-4 py-2 text-gray-300 hover:bg-gray-700">Syntax</a>
+            <a href="#statement" class="block px-4 py-2 text-gray-300 hover:bg-gray-700">Statement</a>
+            <a href="#imagechange" class="block px-4 py-2 text-gray-300 hover:bg-gray-700">Image Change</a>
+            <a href="#paragraph" class="block px-4 py-2 text-gray-300 hover:bg-gray-700">Paragrph</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Home Section -->
+    <section class="text-center font-bold mt-48 mb-48" id="home">
+        <div>
+            <h1 class="text-5xl"> Muhammad Arif Rivaldi </h1>
+            <h2 class="text-3xl">714240008</h2>
+            <h3 class="text-3xl"> D4 Teknik Informatika 1A</h3>
+        </div>
+    </section>
+    <!-- Home Section End -->
+
+    <!-- Aritmatic Section -->
+    <Section id="aritmatic">
+        <h1 class="text-5xl font-bold text-center text-white mb-4">0</h1>
+        <div class="calculator bg-green-600 shadow-lg rounded-lg p-6 mt-20 mb-20">
+            <h1 class="text-5xl font-bold text-center text-white mb-4">Aritmatic</h1>
+            <input type="text" id="display" class="mt-16 w-full p-2 border border-gray-300 rounded mb-4 text-right"
+                disabled>
+            <div class="grid grid-cols-4 gap-4">
+                <button class="bg-green-500 text-white p-2 rounded text-xl font-bold"
+                    onclick="appendToDisplay('9')">9</button>
+                <button class="bg-green-500 text-white p-2 rounded text-xl font-bold"
+                    onclick="appendToDisplay('8')">8</button>
+                <button class="bg-green-500 text-white p-2 roundedtext-xl font-bold"
+                    onclick="appendToDisplay('7')">7</button>
+                <button class="bg-red-500 text-white p-2 rounded text-xl font-bold" onclick="clearDisplay()">C</button>
+                <button class="bg-green-500 text-white p-2 rounded text-xl font-bold"
+                    onclick="appendToDisplay('4')">4</button>
+                <button class="bg-green-500 text-white p-2 rounded text-xl font-bold"
+                    onclick="appendToDisplay('5')">5</button>
+                <button class="bg-green-500 text-white p-2 rounded text-xl font-bold"
+                    onclick="appendToDisplay('6')">6</button>
+                <button class="bg-green-500 text-white p-2 rounded text-xl font-bold"
+                    onclick="appendToDisplay('+')">+</button>
+                <button class="bg-green-500 text-white p-2 rounded text-xl font-bold"
+                    onclick="appendToDisplay('3')">3</button>
+                <button class="bg-green-500 text-white p-2 rounded text-xl font-bold"
+                    onclick="appendToDisplay('2')">2</button>
+                <button class="bg-green-500 text-white p-2 rounded text-xl font-bold"
+                    onclick="appendToDisplay('1')">1</button>
+                <button class="bg-green-500 text-white p-2 rounded text-xl font-bold"
+                    onclick="appendToDisplay('*')">*</button>
+                <button class="bg-green-500 text-white p-2 rounded text-xl font-bold col-span-2"
+                    onclick="appendToDisplay('0')">0</button>
+                <button class="bg-green-500 text-white p-2 rounded text-xl font-bold"
+                    onclick="calculateResult()">=</button>
+                <button class="bg-green-500 text-white p-2 rounded text-xl font-bold"
+                    onclick="appendToDisplay('-')">-</button>
+            </div>
+        </div>
+    </Section>
+    <!-- Aritmatic Section End -->
+
+    <!-- Syntax Section -->
+    <section id="syntax">
+        <div class="bg-gray-100 flex items-center justify-center min-h-screen">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h1 class="text-5xl font-bold text-center text-black mb-40">Syntax</h1>
+                <h1 class="text-xl font-bold mb-4 text-center">Custom Alert</h1>
+                <input type="text" id="alertMessage" placeholder="Masukan Peringatan Anda"
+                    class="border border-gray-300 p-2 rounded w-full mb-4">
+                <button id="alertButton" class="bg-green-500 text-white p-2 rounded hover:bg-red-600 w-full">Peringatan !</button>
+            </div>
+
+            <div id="alertBox" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+                <div class="bg-red-500 text-white p-6 rounded-lg relative">
+                    <span id="alertText"></span>
+                    <button id="closeAlert" class="absolute top-0 right-0 p-1 text-white">&times;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Syntax Section End -->
+
+    <!-- Statement Section -->
+    <section id="statement">
+        <h1 class="text-5xl font-bold text-center text-white mb-4">0</h1>
+        <div class="bg-green-600 shadow-lg rounded-lg p-6 mt-40 mb-40">
+            <h1 class="text-5xl font-bold text-center text-white mb-4">Statement</h1>
+            <p class="mb-4 mt-16 text-3xl font-bold text-center text-white">Siapa Presiden Indonesia Sekarang ? </p>
+            <div class="space-y-2">
+                <button class="bg-green-500 text-white text-xl font-bold p-2 rounded w-full"
+                    onclick="checkAnswer('Prabowo')">Prabowo</button>
+                <button class="bg-green-500 text-white text-xl font-bold p-2 rounded w-full"
+                    onclick="checkAnswer('Jokowi')">Jokowi</button>
+            </div>
+        </div>
+    </section>
+    <!-- Statement Section End -->
+
+    <!-- Image Change Section -->
+    <Section id="imagechange">
+        <h1 class="text-5xl font-bold text-center text-white mb-4">0</h1>
+        <div class="container flex flex-col mx-auto bg-white justify-center text-center items-center mt-20 mb-10">
+            <h1 class="text-5xl font-bold text-center mb-4">Image Change</h1>
+            <img id="toggleImage" src="image/pngwing.com (1).png" alt="Toggle Image" class="mb-4 rounded-lg">
+            <button id="toggleButton" class="px-4 py-2 bg-red-500 text-white rounded hover:bg-green-500">
+                Berubah !
+            </button>
+        </div>
+    </Section>
+    <!-- Image Change Section End -->
+
+    <!-- Paragraf Section -->
+    <section id="paragraph">
+        <div class="flex items-center justify-center h-screen bg-green-600">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold text-center text-white">Paragraph</h1>
+                <p id="toggleParagraph" class="mb-4 mt-20 text-lg text-white font-bold text-justify-center mr-10 ml-10">
+                    Siapa sih Oasis ?
+                </p>
+                <div>
+                    <button id="button1" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-red-500 mr-2">
+                        Penjelasan 1</button>
+                    <button id="button2" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-red-500">
+                        Penjelasan 2
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Paragraf Section End -->
+
+
+    <footer>
+        <div class="bg-black text-center text-white font-semibold">
+            <p>Copyright &copy;SARIPUDIN2024</p>
+        </div>
+    </footer>
+
+    <script src="nav.js"></script>
+    <script src="aritmatic.js"></script>
+    <script src="syntax.js"></script>
+    <script src="statement.js"></script>
+    <script src="imagechange.js"></script>
+    <script src="paragraph.js"></script>
+</body>
+
+</html>

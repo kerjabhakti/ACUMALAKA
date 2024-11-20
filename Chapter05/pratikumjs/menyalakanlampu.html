@@ -1,0 +1,24 @@
+<h2>JavaScript disimpan di body</h2>
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML =
+    "Selamat Datang, Hello World! saya belajar JavaScript"
+</script>
+<h2>Apa yang bisa dilakukan JavaScript</h2>
+<P id="demo">
+    JavaScript bisa mengganti style dari HTML element.
+<button
+  type="button"
+  onclick="document.getElementById('demo').style.fontSize='35px'"
+>
+Klik Disini!
+</button>
+
+ <!-- Ini codingan button yang kedua -->
+ <button
+ type="button"
+ onclick="document.getElementById('waktu').innerHTML = Date()"
+>
+ Klik Disini untuk menampilkan Waktu.
+</button>
+<p id="waktu"></p>

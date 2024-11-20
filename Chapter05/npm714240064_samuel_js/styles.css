@@ -1,0 +1,182 @@
+/* menambahkan font dan sesuaikan ukuran */
+* {
+    font-family: "poppins", sans-serif;
+}
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #2d3748;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 1rem;
+  color: #000000;
+}
+
+/* Highlighted Text Styling */
+.text-green-400 {
+  color: #48bb78;
+}
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a202c;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #2d3748;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 1rem;
+  color: #000000;
+}
+
+/* Button Styling */
+button {
+  background-color: #000000;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000000;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+/* Background and font settings */
+body {
+    background-color: #A9A9A9; 
+    color: #ffffff;           /* White text */
+    font-family: 'Arial', sans-serif; /* Default font */
+    margin: 0;
+    padding: 0;
+  }
+  /* Heading styles */
+  h1 {
+    color: #000000; /* Light Blue (Tailwind's text-blue-400) */
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    color: #000000; /* Softer blue for section headings */
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Paragraph styling */
+  p {
+    color: #000000; /* Light gray (Tailwind's text-gray-300) */
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #000000; /* Blue (Tailwind's bg-blue-500) */
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+  }
+  
+  button:hover {
+    background-color: #000000; /* Darker blue on hover (Tailwind's hover:bg-blue-700) */
+  }
+  
+  /* Specific button colors */
+  button.bg-green {
+    background-color: #000000; /* Green (Tailwind's bg-green-500) */
+  }
+  
+  button.bg-green:hover {
+    background-color: #000000; /* Darker green */
+  }
+  
+  button.bg-purple {
+    background-color: #000000; /* Purple (Tailwind's bg-purple-500) */
+  }
+  
+  button.bg-purple:hover {
+    background-color: #000000; /* Darker purple */
+  }
+  
+  button.bg-red {
+    background-color: #000000; /* Red (Tailwind's bg-red-500) */
+  }
+  
+  button.bg-red:hover {
+    background-color: #000000; /* Darker red */
+  }
+  
+  /* Image styling */
+  img {
+    border-radius: 0.5rem;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+  }
+  
+  /* Container styling */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
