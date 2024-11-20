@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website rR Interaktif JavaScript</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center">
+
+  <div class="container mx-auto px-6 py-10 bg-white shadow-lg rounded-lg">
+    <h1 class="text-3xl font-bold text-center text-blue-600 mb-6">
+      Website Interaktif JavaScript 🎉
+    </h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Aritmatika -->
+      <div class="bg-white p-8 rounded-lg shadow-md w-96">
+        <h1 class="text-2xl font-bold text-center text-blue-600 mb-6">Aritmatika Interaktif</h1>
+    
+        <div class="mb-4">
+          <label for="angka1" class="block text-gray-700 font-bold mb-2">Angka 1:</label>
+          <input type="number" id="angka1" class="w-full border border-gray-300 p-2 rounded" placeholder="Masukkan angka pertama">
+        </div>
+    
+        <div class="mb-4">
+          <label for="angka2" class="block text-gray-700 font-bold mb-2">Angka 2:</label>
+          <input type="number" id="angka2" class="w-full border border-gray-300 p-2 rounded" placeholder="Masukkan angka kedua">
+        </div>
+    
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <button onclick="hitung('+')" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">+</button>
+          <button onclick="hitung('-')" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">-</button>
+          <button onclick="hitung('*')" class="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600">x</button>
+          <button onclick="hitung('/')" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600">:</button>
+        </div>
+    
+        <p id="hasil" class="text-lg font-bold text-center text-gray-700">Hasil: -</p>
+      </div>
+    
+    
+
+      <!-- Syntax -->
+      <body class="bg-gradient-to-r from-blue-50 to-green-100 flex items-center justify-center min-h-screen">
+
+        <div class="bg-white p-8 rounded-lg shadow-md text-center">
+          <h1 class="text-3xl font-bold text-blue-600 mb-6">Syntax Alert</h1>
+          <button onclick="tampilkanAlert()" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded shadow">
+            Tampilkan Alert
+          </button>
+        </div>
+
+      <!-- Statement -->
+      <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="bg-white p-8 rounded-lg shadow-md w-96">
+    <h1 class="text-2xl font-bold text-center text-blue-600 mb-6">Statement Cek Status Kelulusan</h1>
+
+    <div class="mb-4">
+      <label for="ipk" class="block text-gray-700 font-bold mb-2">Masukkan IPK Anda:</label>
+      <input type="number" id="ipk" step="0.01" class="w-full border border-gray-300 p-2 rounded" placeholder="Contoh: 3.25">
+    </div>
+
+    <button onclick="cekKelulusan()" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 w-full">
+      Cek Status
+    </button>
+
+    <p id="hasil2" class="mt-4 text-lg font-bold text-center text-gray-700">Status: -</p>
+  </div>
+
+      <!-- Perubahan Gambar -->
+      <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+        <div class="bg-white p-8 rounded-lg shadow-md text-center w-96">
+          <h1 class="text-2xl font-bold text-blue-600 mb-6">Duka Gambar Naon, Sok Pencet weh. </h1>
+      
+          <img id="memeImage" 
+               src="https://i.pinimg.com/474x/d6/84/63/d6846369a7d768adbb53d8899b2d99d2.jpg" 
+               alt="Meme" 
+               class="rounded-lg w-full mb-4">
+          
+          <button onclick="gantiMeme()" 
+                  class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+            Pencet Cik
+          </button>
+        </div>
+      
+       
+
+      <!-- Button -->
+      <body class="bg-gradient-to-r from-blue-50 to-green-100 flex items-center justify-center min-h-screen">
+
+        <div class="bg-white p-8 rounded-lg shadow-md text-center">
+        <h2 class="text-xl font-bold text-blue-500 mb-4"> Klik Weh Tombol na</h2>
+        <button onclick="tampilkeunMotivasi()" class="bg-blue-500 hover:bg-orange-600 text-white py-2 px-6 rounded shadow">
+          Klik Kanggo Motivasi
+        </button>
+        <p id="motivasiText" class="mt-4 text-gray-700 font-semibold">Cik klik, meureun rejekina ayeuna aya di dieu! 🤭</p>
+      </div>
+
+      <!-- Pergantian Paragraf -->
+      <div>
+        <div class="bg-white p-8 rounded-lg shadow-md text-center w-96">
+        <h2 class="text-xl font-bold text-blue-500 mb-4"> Paragraf Ganti-ganti</h2>
+        <p id="paragrafLucu" class="text-gray-700 font-semibold mb-4">
+          "Hirup mah kawas coding, mun salah titik koma ge bisa error sakabéhna. Tapi tong sieun, kan aya 'debugging' alias usaha deui!"
+        </p>
+        <button onclick="gantiParagrafLucu()" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded shadow">
+          Ganti Paragraf Cik
+        </button>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
