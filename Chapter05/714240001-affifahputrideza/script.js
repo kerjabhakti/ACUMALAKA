@@ -9,7 +9,7 @@ function hasil(){
       hasil = x + y ;
   }else if(operator == 'kurang'){
       hasil = x - y ;
-  }else if(operator == 'kali'){
+  }else if(operator == 'kali'){c
       hasil = x * y ;
   }else if(operator == 'bagi'){
       hasil = x / y ;
