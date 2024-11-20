@@ -1,0 +1,25 @@
+<h2>JavaScript Menggunakan Geolacation</h2>
+<p>klik button untuk menampilkan koordinat</p>
+
+
+<button type="button" onclick="getlocation()">Click didieu!</button>
+
+<p id="demo"></p>
+<script>
+    const x = document.getElementById("demo");
+    function getlocation() {
+        try {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        
+        } catch {
+            x.innerHTML = err;
+        }
+    }
+    function showPosition(position) {
+        x.innerHTML = 
+        "latitude: " +
+        position.coords.latitude +
+        "<br>longitude: " +
+        position.coords.longitude;
+    }
+</script>

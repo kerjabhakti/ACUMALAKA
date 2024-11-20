@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat website dengan tailwind</title>
+    <!--Jangan lupa tambahkan koneksi HTML ke CSS/tailwind-->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!--Membuat class container dan ukurannya disini-->
+    <!--Menambahkan background images-->
+    <!--Menambah posisi gambar agar ketengah-->
+    <!--Mengatur posisi ukurannya-->
+    <div class="container min-h-screen bg-[url('img/image.png')] bg-center bg-cover px-28 py-5 relative">
+        <!--Membuat class name flex pada nav-->
+        <nav class="flex items-center">
+            <img src="img/logo.png" alt="logonyaini" class="w-40 cursor-pointer">
+            <!--Atur posisi logo kiri, menu tengah dan card icon di sebelah kana-->
+            <ul class="flex-1 text-center">
+                <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white">Home</a></li>
+                <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white">About</a></li>
+                <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white">Features</a></li>
+                <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white">Contact</a></li>
+            </ul>
+            <img src="img/cart.png" alt="keranjang" class="w-8 cursor-pointer">
+        </nav>
+        <!--Atur text jadi putih-->
+        <!--jarak atas bawah dan ukuran text judul h1-->
+        <div class="text-white mt-48 w-1/2">
+            <h1 class="text-6xl font-semibold leading-normal">
+                Belajar cepat <br />
+                Pemograman website Tailwind
+                <span class="font-light">15 menit saja</span>
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus assumenda magni optio, voluptatibus
+                eius saepe nam laudantium voluptatem molestias excepturi beatae corrupti porro quis quisquam et fugiat
+                facilis vitae? Aspernatur officiis sunt, molestias possimus iure et in commodi porro quibusdam adipisci
+                recusandae est, totam animi?</p>
+            <!--Membuat menu hover-->
+            <div class="mt-10">
+                <a href="#" class="bg-yellow-300 rounded-3xl py-3 px-8
+                font-medium inline-block mr-4
+                hover:bg-transparent hover:border-yellow-300
+                hover:text-white duration-300 hover:border border border-transparent ">Mari Belajar
+                </a>
+                <a href="#">Download Modulnya</a>
+            </div>
+
+        </div>
+        <img src="img/programmer.png" class=" w-1/2 absolute right-0 bottom-0">
+    </div>
+
+    <!--aritmatik-->
+
+    <body class="container text-white bg-black flex-col flex items-center mx-4">
+        <h1 class="text-6xl mt-8">ARITMATIKA</h1>
+        <div class="bg-black p-8 rounded-lg shadow-md w-96">
+            <section class="text-center">
+                <h4 class="text-3xl font-semibold leading-normal mt-5 text-center">ARITMATIKA</h4>
+                <h2 class="mb-3 text-center">Operasi Aritmatika Sederhana</h2>
+                <!-- inputan -->
+                <input class="text-black" type="number" id="num1" placeholder="Masukkan angka pertama" required>
+                <br>
+                <input class="text-black mt-4" type="number" id="num2" placeholder="Masukkan angka kedua" required><br>
+                <!-- button aritmatika -->
+                <button type="button" onclick="calculate('+')"
+                    class="bg-yellow-600 text-white font-bold py-2 px-4 rounded hover:bg-yellow-900 mt-2">+</button>
+                <button type="button" onclick="calculate('-')"
+                    class="bg-yellow-600 text-white font-bold py-2 px-4 rounded hover:bg-yellow-900 mt-2">-</button>
+
+                <button type="button" onclick="calculate('*')"
+                    class="bg-yellow-600 text-white font-bold py-2 px-4 rounded hover:bg-yellow-900 mt-2">x</button>
+
+                <button type="button" onclick="calculate('/')"
+                    class="bg-yellow-600 text-white font-bold py-2 px-4 rounded hover:bg-yellow-900 mt-2">:</button>
+
+
+                <h2 class="text-white mt-3">Hasil: <span id="result"></span></h2>
+
+                      
+            </section>
+        </div>
+
+        <!--syntax-->
+        <div class="container text-center">
+            <h1 class="mt-10">Masukkan Nama Mu</h1><br>
+            <input type="text" id="nameInput" class="text-black" placeholder="Masukkan nama Anda">
+            <button type="button" onclick="greetUser()"
+                class="bg-yellow-600 text-white font-bold py-2 px-4 rounded hover:bg-yellow-900 mt-2">klik Aku</button>
+            <h2 id="greetingMessage"></h2>
+        </div> <br><br>
+        </section>
+
+        <!-- statement -->
+        <div class="text-center mb-4">
+            <h1 class="text-2xl font-bold text-white mt-10 mb-6">Mana Yang Benar Dari Seorang Dzakwan</h1>
+            <div class="flex space-x-4 justify-center">
+                <button
+                    class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                    onclick="jakwanpintar()">
+                    Dzakwan Pintar
+                </button>
+                <button
+                    class="bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300"
+                    onclick="jakwanbaik()">
+                    Dzakwan Baik
+                </button>
+
+                <span id="output"></span>
+            </div>
+
+        </div>
+
+        <!-- gantigambar -->
+        <div class="changegambar">
+            <section>
+                <h4 class="text-3xl font-semibold leading-normal mt-36">PENCET BIAR KAGET</h4>
+                <h2>HUAHAHAHAA </h2>
+                <img id="gambarnya" src="img/WhatsApp Image 2024-11-20 at 19.08.32_4c9dd534.jpg" width="200" alt="">
+                <button onclick="ganti()"
+                    class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 mt-4">Ganti
+                    gambar</button>
+              </section>
+          </div>
+
+        <!-- paragraf berubah -->
+        <div class="container text-center paragraf">
+            <h4 class="text-3xl font-semibold leading-normal mt-36">PERGANGTIAN PARAGRAF DARI BUTTON </h4>
+
+            <p id="demo">jadi apa prok prok prok</p>
+            <button type="button" onclick="sulap()"
+                class="bg-pink-500 text-white font-bold py-2 px-4 rounded hover:bg-pink-900 mt-4">Sulap</button>
+        <script src="script.js"></script>
+
+        </section>
+
+    </body>
+
+</html>
