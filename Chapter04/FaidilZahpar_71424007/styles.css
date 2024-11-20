@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f7fa;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #3a8dc2;
+}
+
+header p {
+  color: #666;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #3a8dc2;
+  margin-bottom: 10px;
+}
+
+.tracker-item {
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 1rem;
+  color: #555;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #3a8dc2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3275a3;
+}
+
+.history-chart {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.history-chart button {
+  padding: 10px 20px;
+  background-color: #3a8dc2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  flex-grow: 1;
+  margin: 0 5px;
+}
+
+.history-chart button:hover {
+  background-color: #3275a3;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #666;
+}

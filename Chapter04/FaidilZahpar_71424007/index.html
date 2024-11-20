@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthWell</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>HealthWell</h1>
+      <p>Your Daily Health Tracker</p>
+    </header>
+
+    <section id="tracker">
+      <h2>Daily Tracker</h2>
+      <div class="tracker-item">
+        <label for="bedtime-hour">Pengingat Tidur:</label>
+        <input type="number" id="bedtime-hour" placeholder="Hour" min="0" max="23" />
+        <input type="number" id="bedtime-minute" placeholder="Minute" min="0" max="59" />
+        <button>Set Bedtime Reminder</button>
+      </div>
+      <div class="tracker-item">
+        <label for="water-goal">Target Minum (gelas):</label>
+        <input type="number" id="water-goal" placeholder="Set Goal" min="1" />
+      </div>
+      <div class="tracker-item">
+        <label for="water-drank">Yang sudah diminum (gelas):</label>
+        <input type="number" id="water-drank" placeholder="Glasses Drank" min="0" />
+        <button>Update Water Intake</button>
+      </div>
+    </section>
+
+    <section id="health-history">
+      <h2>Health History & Report</h2>
+      <p>Lihat progress kamu.</p>
+      <div class="history-chart">
+        <button>Activity</button>
+        <button>Sleep</button>
+        <button>Hydration</button>
+      </div>
+    </section>
+
+    <section id="health-notes">
+      <h2>Health Notes</h2>
+      <textarea placeholder="Catat mood atau kondisi fisik harian kamu disini..."></textarea>
+    </section>
+
+    <section id="health-tips">
+      <h2>Healty Tips</h2>
+      <ul>
+        <li>Minum air putih secara teratur sepanjang hari.</li>
+        <li>Usahakan tidur setidaknya 7 jam setiap malam.</li>
+        <li>Ambil jeda untuk peregangan jika duduk terlalu lama.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>HealthWell &copy; 2024</p>
+    </footer>
+  </body>
+</html>
