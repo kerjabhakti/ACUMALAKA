@@ -1,0 +1,5 @@
+<?
+function namaFungsi(){
+    //blok program
+}
+?>
