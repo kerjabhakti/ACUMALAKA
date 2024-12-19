@@ -1,1 +1,2 @@
-Kerjakan Praktikum pada Modul
+# Kerjakan Praktikum pada Modul
+Buatkan Folder Nama dan NPM
