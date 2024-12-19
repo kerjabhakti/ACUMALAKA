@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membuat Website dengan Tailwind</title>
+    <!-- Jangan lupa tambahkan koneksi HTML ke CSS/Tailwind -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[url('image.uni/image.png')] bg-center bg-cover px-28 py-5 relative">
+    <!-- Membuat class containernya disini -->
+    <!-- Menambahkan background images -->
+    <!-- Menambah posisi gambar agak ke tengah -->
+    <!-- Mengatur posisi ukurannya -->
+    <div>
+      <!-- Membuat class name flex pada nav -->
+      <nav class="flex items-center">
+        <img src="img/wolf.jpeg" alt="logonyaini" class="w-40 cursor-pointer" />
+        <ul class="flex-1 text-right">
+          <!-- Atur warna text agar jadi putih dan tanpa underline -->
+          <!-- Atur posisi text menjadi sejajar -->
+          <!-- Atur margin setelah inline-block dan padding setelah text-white -->
+          <li class="list-none inline-block px-5">
+            <a href="#" class="no-underline text-white text-right px-2">Home</a>
+          </li>
+          <li class="list-none inline-block px-5">
+            <a href="#" class="no-underline text-white text-right px-2">About</a>
+          </li>
+          <li class="list-none inline-block px-5">
+            <a href="#" class="no-underline text-white text-right px-2">Features</a>
+          </li>
+          <li class="list-none inline-block px-5">
+            <a href="#" class="no-underline text-white text-right px-2">Contact</a>
+          </li>
+          <!-- Atur posisi logo kiri, menu tengah dan cart icon di sebelah kanan -->
+        </ul>
+        <img src="img/images.jpeg" alt="keranjang" class="w-8 cursor-pointer" />
+      </nav>
+      <!-- Membuat text -->
+      <!-- Rubah text menjadi putih -->
+      <!-- Atur jarak text atas bawah dan ukuran text judul h1 -->
+      <div class="text-white mt-48 w-1/2">
+        <h1 class="text-6xl font-semibold leading-normal">
+          Belajar Cepat <br />
+          Pemrograman Website Tailwind
+          <span class="font-light">15 Menit saja</span>
+        </h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, voluptates similique animi repudiandae hic vel? Molestias tempora magni itaque incidunt esse soluta tenetur, deserunt velit praesentium labore dignissimos vel
+          exercitationem dolores ipsa perspiciatis illum iste assumenda. Facili s, consequuntur temporibus aspernatur dolor quia quam minus quas eos soluta velit molestiae unde sint quisquam ex. Accusamus obcaecati sunt, illo odit, autem
+          magnam possimus nesciunt similique illum nemo veritatis quidem est delectus nisi dolorum excepturi aperiam consequatur ullam vero provident pariatur iste. Cum architecto maxime sunt reprehenderit, voluptatum hic eaque. Iure magni
+          excepturi voluptas non, beatae, vero est laborum voluptates, autem fugit et!   
+        </p>
+        <div class="mt-10">
+          <a href="#" class="bg-yellow-300 rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 hover:border border border-transparent">Mari Belajar</a>
+          <a href="#">Download Modulnya</a>
+        </div>
+        <img src="img/foto.jpg" class="w-1/2 absolute right-0 top-64" />
+      </div>
+
+      <!-- ARITMATIKA -->
+  <div class="container text-center py-5">
+    <h1 class="text-white text-6xl leading-normal">Aritmatika</h1>
+    <input type="number" name="x" id="x" class="rounded-lg">
+    <select name="operator" id="operator">
+      <option value="tambah">+</option>
+      <option value="kurang">-</option>
+      <option value="kali">*</option>
+      <option value="bagi">/</option>
+    </select>
+    <input type="number" name="y" id="y">
+    <button onclick="hasil()" class="bg-white">SUBMIT</button>
+    <p id="hasil" class="text-white"></p>
+  </div>
+
+<!-- SYNTAX -->
+<div class="container text-center py-5">
+  <h1 class="text-white text-xl leading-normal mb-5">Syntax</h1>
+  <p class="text-white">Apa aja</p>
+  <input type="text" name="tulisan" id="tulisan" class="" />
+  <button onclick="tulisan()" class="rounded-none bg-white text-black">SUBMIT</button>
+</div>
+
+<!-- STATEMENT -->
+<div class="container text-center py-5">
+  <h1 class="text-white text-6xl font-semibold mb-5">Statement</h1>
+  <p class="text-white">kau baik iya/ga</p>
+  <input type="text" name="huruf" id="huruf" class=""/>
+  <button onclick="jika()" class="rounded-none bg-white text-black">SUBMIT</button>
+</div>
+
+<!-- IMAGE -->
+<div class="container text-center py-5">
+  <h1 class="text-white text-6xl font-semibold mb-5">Image</h1>
+  <button onclick="foto1()" class="bg-white">Gambar 1</button>
+  <button onclick="foto2()" class="bg-white">Gambar 2</button>
+  <img src="img/lek.jpeg" alt="ipa" id="ipa" class="w-72 m-auto">
+
+<!-- PARAGRAF -->
+<div class="container text-center py-5">
+  <h1 class="text-white text-6xl font-semibold mb-5">Paragraf</h1>
+  <p id="hasilparagraf" class="text-white"></p>
+  <button onclick="paragraf()" class="rounded-none bg-white text-black">KLIK</button>
+</div>
+
+<!-- SCRIPT JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+  </body>
+</html>
