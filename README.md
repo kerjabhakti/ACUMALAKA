@@ -32,3 +32,20 @@ to get ssh key in your computer, and put in your github or gitlab ssh key settin
 cat ~/.ssh/id_rsa.pub
 ```
 if there is no key appears, plese generate the key also set global config of git in next section and please add the public key to your github profile.
+
+
+
+| NO | Ketua Kelompok | Nilai | Anggota |Nilai | Urutan |
+| -------- | -------- | -------- | -------- |-------- |-------- |
+| 1 | Keyla Sun |  |  |  |   | 
+| 2 | Raditya |  |  |  |  | 
+| 3 | Rayhan |  |  |  |  | 
+| 4 | Samuel |  |  |  |  | 
+| 5 | Ridwan |  |  |  |  | 
+| 6 | Rahmat |  |  |  |  | 
+| 7 | Zahwan |  |  |  |  | 
+| 8 | Faris |  |  |  |  | 
+| 9 | Nadi |  |  |  |  | 
+| 10 | Alif |  |  |  |  | 
+| 11 | Rafi |  |  |  |  | 
+
