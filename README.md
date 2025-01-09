@@ -35,17 +35,17 @@ if there is no key appears, plese generate the key also set global config of git
 
 
 
-| NO | Ketua Kelompok | Nilai | Anggota |Nilai | Urutan |
-| -------- | -------- | -------- | -------- |-------- |-------- |
-| 1 | Keyla Sun |  |  |  |   | 
-| 2 | Raditya |  |  |  |  | 
-| 3 | Rayhan |  |  |  |  | 
-| 4 | Samuel |  |  |  |  | 
-| 5 | Ridwan |  |  |  |  | 
-| 6 | Rahmat |  |  |  |  | 
-| 7 | Zahwan |  |  |  |  | 
-| 8 | Faris |  |  |  |  | 
-| 9 | Nadi |  |  |  |  | 
-| 10 | Alif |  |  |  |  | 
-| 11 | Rafi |  |  |  |  | 
+| NO | Ketua Kelompok | Nilai | Anggota |Nilai | 
+| -------- | -------- | -------- | -------- |-------- |
+| 1 | Keyla Sun |  |  |  | 
+| 2 | Raditya |  |  |  | 
+| 3 | Rayhan |  |  |  |  
+| 4 | Samuel |  |  |  | 
+| 5 | Ridwan |  |  |  | 
+| 6 | Rahmat |  |  |  |  
+| 7 | Zahwan |  |  |  | 
+| 8 | Faris |  |  |  |  
+| 9 | Nadi |  |  |  |  
+| 10 | Alif |  |  |  |  
+| 11 | Rafi |  |  |  | 
 
